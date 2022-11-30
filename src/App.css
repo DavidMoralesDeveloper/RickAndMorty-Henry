@@ -1,9 +1,9 @@
 .App {
    text-align: center;
+   background-image: url(https://free4kwallpapers.com/uploads/wallpaper/-breaking-bad-rick-and-morty-wallpaper-1024x768-wallpaper.jpg);
+   background-repeat: no-repeat;
+   background-position:top;
+   background-size: cover ;
+   background-attachment: fixed;
 }
-.Cards{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   
-}
+

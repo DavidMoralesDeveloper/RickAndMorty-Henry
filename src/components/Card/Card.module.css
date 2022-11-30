@@ -1,0 +1,31 @@
+.nombre{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: rgb(153, 12, 188);
+}
+
+.imagenes{
+opacity: 75%;
+}
+.imagenes:hover{
+    opacity: 100%;
+}
+
+
+
+.content {
+    width: 100%;
+    border-radius: 1px;
+    box-shadow: 1px;
+      
+  }
+
+
+/* .image {
+    position : relative;
+    
+    box-shadow : 5 5px 20px rgba(0,0,0,0.2);
+
+  } */
+
+  
