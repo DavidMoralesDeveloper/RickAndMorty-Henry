@@ -1,0 +1,130 @@
+/* .warning {
+    border: solid red 1px;
+    border-radius: 0.2em;
+  } */
+  
+  .danger {
+    font-size: 1em;
+    color: red;
+    margin-left: .5em;
+  }
+  
+
+  .contenerdor{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8acae2ac-ead9-4893-9eb8-3ae28fb6d3e1/darhndi-9e01b75f-24c2-4b56-95e5-f89519a50001.jpg/v1/fill/w_1024,h_572,q_75,strp/rick_and_morty_wallpaper_by_flameokami_darhndi-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTcyIiwicGF0aCI6IlwvZlwvOGFjYWUyYWMtZWFkOS00ODkzLTllYjgtM2FlMjhmYjZkM2UxXC9kYXJobmRpLTllMDFiNzVmLTI0YzItNGI1Ni05NWU1LWY4OTUxOWE1MDAwMS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pNErMVHWULPIPZboLpxpDIhpiAppWwVAki-jD3H3GsY);
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    z-index: 0;
+  }
+  
+  
+  
+  .header{
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(40% - 255px);
+    
+    z-index: 2;
+  }
+  
+  .header div{
+    float: left;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+  }
+  
+  .header div span{
+    color: #09ee4d !important;
+  }
+  
+  .login{
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .login input[type=email]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+  }
+  
+  .login input[type=text]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+  }
+  
+  .button{
+    width: 260px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+  }
+  
+  .button:hover{
+    opacity: 0.8;
+  }
+  
+  .button:active{
+    opacity: 0.6;
+  }
+  
+  .login input[type=email]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+  }
+  
+  .login input[type=text]:focus{
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.9);
+  }
+  
+  .button:focus{
+    outline: none;
+  }
+  
+  ::-webkit-input-placeholder{
+     color: rgba(255,255,255,0.6);
+  }
+  
+  ::-moz-input-placeholder{
+     color: rgba(255,255,255,0.6);
+  }
