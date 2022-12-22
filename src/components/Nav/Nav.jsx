@@ -3,7 +3,8 @@ import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
 import style from "./Nav.module.css";
 
-const Nav = ({ onSearch }) => {
+const Nav = ({ onSearch , handleRandom , logout }) => {
+
   return (
     <div className={style.sizeMenu}>
       <div className={style.profile}>
@@ -39,6 +40,9 @@ const Nav = ({ onSearch }) => {
           <Link to="/about">
             <div className={style.title}> About </div>
           </Link>
+
+          <button onClick={() => handleRandom()}> Ramdom Character</button>
+          <button onClick={() => logout()}> Log Out</button>
         </div>
       </div>
     </div>

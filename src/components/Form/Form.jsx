@@ -1,27 +1,12 @@
 import React from "react";
 import { validate } from "./validation";
 import style from "./Form.module.css";
-import { useNavigate } from "react-router-dom";
+
 
 
 const Form = (props) => {
 
-  const navigate = useNavigate();
-  const [access, setAccess] = React.useState(false);
-  const username = 'ejemplo@gmail.com';
-  const password = '1password';
-
-  function login(userData) {
-   if (userData.password === password && userData.username === username) {
-      setAccess(true);
-      navigate('/home');
-   }
-   }
-
-   React.useEffect(() => {
-     !access && navigate('/');
-  }, [access, navigate]);
-
+ 
 
   const [userData, setUserData] = React.useState({
     username: "",
@@ -48,9 +33,9 @@ const Form = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     let ErrorsArray = Object.keys(errors)  ;        
-    if(!ErrorsArray.length) login(userData)
-    else alert('Debes corregir los errores')
-    login(userData)    
+    if(!ErrorsArray.length) props.login(userData)
+    else alert('Debes usar el email y password del ejemplo')
+    props.login(userData)    
   };
 
   return (

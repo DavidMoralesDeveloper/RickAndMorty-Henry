@@ -9,11 +9,11 @@ function Card(props) {
 
   useEffect(() => {
     props.myFavorites.forEach((fav) => {
-       if (fav.id === props.id) {
-          setIsFav(true);
-       }
+      if (fav.id === props.id) {
+        setIsFav(true);
+      }
     });
- }, [props.myFavorites]);
+  }, [props.myFavorites]);
 
   function handleFavorite() {
     if (isFav) {
@@ -26,36 +26,38 @@ function Card(props) {
         species: props.species,
         name: props.name,
         image: props.image,
+        gender:props.gender, 
+        origin:props.origin
+
       };
       props.addCharacter(Character);
     }
   }
 
-  
-
-
   return (
     <>
-      <div className={style.nombre}>
-        <Link to={`/detail/${props.id}`}>
-          <h2>{props.name}</h2>
-        </Link>
+      <div className={style.contenedor}>
+        <div className={style.nombre}>
+          <Link to={`/detail/${props.id}`}>
+            <h2>{props.name}</h2>
+          </Link>
+        </div>
+        <div className={style.image}>
+          <img src={props.image} alt="Fotos" className={style.imagenes} />
+        </div>
+        <div className={style.content}>
+          <h2> {props.species} </h2>
+          <h2>{props.gender}</h2>
+        </div>
+        <button id={props.id} onClick={props.onClose}>
+          X
+        </button>
+        {isFav ? (
+          <button onClick={handleFavorite}>❤️</button>
+        ) : (
+          <button onClick={handleFavorite}>🤍</button>
+        )}
       </div>
-      <div className={style.image}>
-        <img src={props.image} alt="Fotos" className={style.imagenes} />
-      </div>
-      <div className={style.content}>
-        <h2> {props.species} </h2>
-        <h2>{props.gender}</h2>
-      </div>
-      <button id={props.id} onClick={props.onClose}>
-        X
-      </button>
-      {isFav ? (
-        <button onClick={handleFavorite}>❤️</button>
-      ) : (
-        <button onClick={handleFavorite}>🤍</button>
-      )}
     </>
   );
 }

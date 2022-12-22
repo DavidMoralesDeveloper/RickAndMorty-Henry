@@ -9,6 +9,6 @@ const store = createStore(
    composeWithDevTools(applyMiddleware(thunk))
 );
 
-// const storeRicknMorty = createStore(rootReducer);
+// const store = createStore(reducer);
 
 export default store;
